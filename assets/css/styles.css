@@ -109,8 +109,15 @@
   border: 1px solid var(--secondary-color);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   :root {
-    --primary-color: red;
+    --primary-color: #fff;
+  }
+  /* card style */
+  .card-containers {
+    padding: 1rem;
+  }
+  .card-footer {
+    display: block;
   }
 }
