@@ -1,0 +1,116 @@
+:root {
+  --primary-color: rgb(163, 245, 241);
+  --secondary-color: #535050;
+  --transition: 0.5s all ease-in-out;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+/* ===========Header============== */
+.logo {
+  float: left;
+}
+.logo h1 {
+  color: #24aca0;
+}
+#nav-menu {
+  float: right;
+}
+#nav-menu ul {
+}
+#nav-menu ul li {
+  list-style-type: none;
+  margin: 1rem;
+  float: left;
+}
+#nav-menu ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #a19f9f;
+}
+#nav-menu ul li a:hover {
+  color: #24aca0;
+  transition: 0.5s all ease-in-out;
+}
+
+/* ===============Card style================ */
+.card-containers {
+  box-sizing: border-box;
+  padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.card-containers .card {
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid #dddcdc;
+  border-radius: 10px;
+}
+.card-containers .card:hover {
+  box-shadow: 0px 4px 20px #a19f9f;
+  transition: var(--transition);
+}
+.card-containers .card img {
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-body {
+  padding: 0.7rem;
+}
+.card-body h1 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.card-body p {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  line-height: 1.5;
+  color: #535050;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-footer p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.card-footer p strong {
+  color: #000;
+}
+
+.card-footer button {
+  border: none;
+  background-color: var(--secondary-color);
+  padding: 8px 20px;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.card-footer button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  border: 1px solid var(--secondary-color);
+}
+
+@media screen and (max-width: 650px) {
+  :root {
+    --primary-color: red;
+  }
+}
